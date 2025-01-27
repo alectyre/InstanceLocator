@@ -20,3 +20,6 @@ InstanceLocator.Global.Register(this, InstanceType.Multiple);
 
 InstanceLocator.ForScene(gameObject.scene).TryGetAll(out IEnumerable<PlayerShip> playerShips)
 ```
+
+#### Usage:
+While no set up is necessary for registering instances globally or for scenes, when registering instances for a GameObject an InstanceLocator component must be added to the GameObject or one of its parents, e.g. the root of a prefab.
